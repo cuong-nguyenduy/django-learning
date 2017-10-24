@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Four in A Row - The Game</title>
+    <link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="container" style="text-align:center;">
+        <div style="border: 1px solid green">
+            <h2>Welcome to <strong>Four in A Row</strong> - The Game</h2>
+            <p>The object of the game is to connect four of your chips in a row!</p>
+            <p>The first gamer having four chips in a row wins the game!</p>
+        </div>
+        <br>
+        <table>
+            <tr>
+                <td><strong>Player: </strong></td>
+                <td id="idPlayerName">Name</td>
+                <td id="idPlayerColor" style="border-radius: 50px"></td>
+            </tr>
+        </table>
+        <table id="result"></table>
+        <hr>
+        <table class='playField'></table>
+    </div>
+    <script src="../lib/jquery-3.2.1.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
