@@ -1,0 +1,17 @@
+{% extends "basic_app/basic_app_base.html" %}
+
+{% block head_block %}
+School Deletion Confirmation
+{% endblock head_block %}
+
+{% block body_block %}
+
+<h1>Are you sure to delete <strong>{{ school.name }}</strong> ?</h1>
+<form method="POST">
+    {% csrf_token %}
+
+    <input class="btn btn-danger btn-lg" type="submit" value="Delete">
+    <a class="btn btn-primary btn-lg" href="{% url 'basic_app:detail' pk=school.pk %}">Cancel</a>
+</form>
+
+{% endblock body_block %}

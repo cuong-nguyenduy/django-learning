@@ -21,4 +21,11 @@ School Details
 
 </div>
 
+<div class="container">
+    <p>
+        <a class="btn btn-warning btn-lg" href="{% url 'basic_app:school_update' pk=school_detail.pk %}">Update</a>
+        <a class="btn btn-danger btn-lg" href="{% url 'basic_app:school_delete' pk=school_detail.pk %}">Delete</a>
+    </p>
+</div>
+
 {% endblock body_block %}
