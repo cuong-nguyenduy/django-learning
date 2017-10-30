@@ -1,5 +1,22 @@
 {% extends "blog/base.html" %}
 
 {% block head_block %}
-About page
+Draft Posts
 {% endblock head_block %}
+
+
+{% block block_body %}
+
+<h1>List of your draft posts</h1>
+<hr>
+{% for post in posts  %}
+
+    <div class="post">
+        <p class="date">Created: {{ post.created_date|date:"D M Y" }}</p>
+        <h2><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h2>
+        <p>{{ post.text|truncatechars:200 }}</p>
+    </div>
+
+{% endfor %}
+
+{% endblock block_body %}

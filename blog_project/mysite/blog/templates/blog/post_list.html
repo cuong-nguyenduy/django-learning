@@ -1,5 +1,29 @@
 {% extends "blog/base.html" %}
 
 {% block head_block %}
-About page
+All Posts
 {% endblock head_block %}
+
+
+{% block body_block %}
+
+<div class="centerstage">
+    <h1>Blog Posts</h1>
+    <hr>
+    {% for post in post_list %}
+        <div class="blogpost">
+            <ol>
+                <li>
+                    <h2><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h2>
+                    <div class="date">
+                        <p>Published On: {{ post.published_date|date:"D M Y" }}</p>
+                    </div>
+                    <a href="{% url 'post_detail' pk=post.pk %}">Comments: {{ post.approved_comments.count }}</a>
+                </li>
+            </ol>
+        </div>
+    {% endfor %}
+
+</div>
+
+{% endblock body_block %}
