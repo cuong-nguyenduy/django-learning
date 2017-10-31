@@ -1,10 +1,51 @@
+/* Font */
+.techfont {
+    font-family: 'Russo One', sans-serif;
+    font-size: 1.5em;
+    margin-block-end: 10px;
+}
+
+.bigbrand {
+    font-size: 1.5em;
+}
+
+
+/* My own custom CSS */
+.centerstage {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.postdate {
+    text-align: center;
+}
+
+.posttitle {
+    font-family: "Russo One", sans-serif;
+    font-size: 3em;
+    text-align: left;
+}
+
+.postcontent {
+    font-family: "Montserrat";
+    font-size: 1.5em;
+}
+
+.btn-comment {
+    position: absolute;
+    right: 0px;
+}
+
+
+
 /* Codepen.io */
 .loader {
-    position:fixed;
+    /* position:fixed;
     left:0;
     right:0;
     top:0;
-    bottom:0;
+    bottom:0; */
     filter:hue-rotate(0deg);
     /* background:linear-gradient(45deg,#0f8,#08f); */
     color: linear-gradient(45deg,#0f8,#08f);
@@ -49,42 +90,3 @@
 }
 
 
-
-/* Font */
-.techfont {
-    font-family: 'Russo One', sans-serif;
-    font-size: 1.5em;
-    margin-block-end: 10px;
-}
-
-.bigbrand {
-    font-size: 1.5em;
-}
-
-
-/* My own custom CSS */
-.centerstage {
-    margin-left: auto;
-    margin-right: auto;
-}
-
-
-.postdate {
-    text-align: center;
-}
-
-.posttitle {
-    font-family: "Russo One", sans-serif;
-    font-size: 3em;
-    text-align: left;
-}
-
-.postcontent {
-    font-family: "Montserrat";
-    font-size: 1.5em;
-}
-
-.btn-comment {
-    position: absolute;
-    right: 0px;
-}

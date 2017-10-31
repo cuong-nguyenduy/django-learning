@@ -11,10 +11,12 @@ Post Deletion Confirmation
 
     {% csrf_token %}
 
-    <h1>Do you really one to delete?</h1>
-    <p>{{ object }}</p>
-
-    <button class="btn btn-danger" type="submit" name="Delete"></button>
+    <h1>Do you really want to delete this post?</h1>
+    <div style="border: 1px solid red">
+        <p style="margin: 5px">{{ object }}</p>
+    </div>
+    <br>
+    <button class="btn btn-danger" type="submit" name="Delete">Delete</button>
 
 </form>
 
