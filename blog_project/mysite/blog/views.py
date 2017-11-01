@@ -85,12 +85,14 @@ def approve_comment(request, pk):
     comment.approve()
     return redirect('post_detail', pk=comment.post.pk)
 
+
 @login_required
 def remove_comment(request, pk):
     comment = get_object_or_404(Comment, pk=pk)
     post_pk = comment.post.pk
     comment.delete()
     return redirect('post_detail', pk=post_pk)
+
 
 @login_required
 def publish_post(request, pk):

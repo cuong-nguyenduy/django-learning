@@ -14,7 +14,7 @@ All Posts
         <div class="blogpost">
             <ul>
                 <li>
-                    <h2><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h2>
+                    <h2 class="loader"><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h2>
                     <div class="date">
                         <p>Published On: {{ post.published_date|date:"D M Y" }}</p>
                     </div>
