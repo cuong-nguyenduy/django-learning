@@ -1,4 +1,3 @@
 .vscode/
 *.pyc
-*.sqlite3
-
+simplesocial/*.sqlite3
