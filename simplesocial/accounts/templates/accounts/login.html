@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% load bootstrap3 %}
+
+{% block head_block %}
+
+Login page
+
+{% endblock head_block %}
+
+{% block body_block %}
+
+<div class="container">
+    <h1>Please enter your credentials to login:</h1>
+    <form method="POST">
+
+        {% csrf_token %}
+        {% bootstrap_form form %}
+
+        <input class="btn btn-default" type="submit" value="Login">
+    </form>
+
+</div>
+
+{% endblock body_block %}

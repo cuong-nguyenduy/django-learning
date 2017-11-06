@@ -14,8 +14,6 @@ logging.basicConfig(level=logging.DEBUG)
 # Create your views here.
 class SignUpView(CreateView):
     form_class = forms.UserSignUpForm
-    # model = models.User
-    # fields = ('username', 'email', 'password',)
     success_url = reverse_lazy('login')
-    # print(str(success_url))
     template_name = 'accounts/signup.html'
+
